@@ -1,0 +1,35 @@
+<!-- HTML TEMPLATE FOR FLASK APP -->
+
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>AutoJourney Test</title>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+        <!-- ADD IN A LINK TO NORMALIZE.CSS HERE -->
+
+        <!-- EMBED STYLING HERE -->
+        <style>
+        </style>
+
+
+    </head>
+
+    <body>
+
+    <section>
+        <h1>AutoJourney Test Web App</h1>
+        <p>Enter a line and see some tube train information like a voiceover</p>
+        <!-- ADD A FORM/INPUT IN HERE TO LET THE USER SPECIFY THE API SEARCH PARAMETER -->
+        <form action="." method="POST">
+            <span class="textInput">Tube Line: <input type="text" placeholder="Input the Tube line" name="tubeLine"><br></span>
+        </form>
+
+        <p>{{API_message}}</p>
+    </section>
+
+    </body>
+
+</html>
